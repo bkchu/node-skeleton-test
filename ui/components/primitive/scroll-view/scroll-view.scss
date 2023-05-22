@@ -1,0 +1,53 @@
+@import "../../../common-style.scss";
+
+.ScrollView {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  &__Bar {
+    cursor: pointer;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+    position: absolute;
+    right: 0px;
+    border-radius: 3px;
+    width: 5px;
+    background: rgba(#000000, 0.25);
+    opacity: 0;
+    height: 0;
+
+    &:hover {
+      background: rgba(#000000, 0.4);
+    }
+  }
+
+  &__Content {
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--horizontal {
+    height: 5px;
+    right: inherit;
+  }
+
+  &--horizontal-content {
+    flex-direction: row;
+  }
+}
+
+.ScrollView--light {
+  & .ScrollView {
+    &__Bar {
+      background: rgba(#fafafa, 0.2);
+
+      &:hover {
+        background: rgba(#fafafa, 0.5);
+      }
+    }
+  }
+}

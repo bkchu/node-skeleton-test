@@ -1,0 +1,81 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true
+  },
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "terminal.integrated.scrollback": 100000,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "breadcrumbs.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "search.exclude": {
+    "**/.cache": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.eol": "\n",
+  "prettier.endOfLine": "lf",
+  "explorer.compactFolders": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.wrappingColumn": 80,
+  "files.insertFinalNewline": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "[csv]": {
+    "rewrap.autoWrap.enabled": false
+  },
+  "[markdown]": {
+    "rewrap.autoWrap.enabled": false
+  },
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "explorer.incrementalNaming": "disabled",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "window.zoomLevel": -1,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always"
+}

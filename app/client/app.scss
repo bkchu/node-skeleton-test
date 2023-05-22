@@ -1,0 +1,73 @@
+#main {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+body button input {
+  font-family: Inter, Lato, Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  display: flex;
+  color: black;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  outline: 0;
+}
+
+.full-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  outline: 0;
+  border: 0;
+}
+
+div {
+  box-sizing: border-box;
+  border: none;
+}
+
+.App {
+  &__Toast {
+    & > .Toast__Card {
+      box-shadow: 0px 8px 12px rgba(48, 61, 80, 0.15),
+        0px 0px 1px rgba(48, 61, 80, 0.31);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-enabled {
+    display: block;
+  }
+  .mobile-disabled {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-enabled {
+    display: none;
+  }
+  .mobile-disabled {
+    display: block;
+  }
+}

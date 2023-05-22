@@ -1,0 +1,53 @@
+{
+  "name": "swapi-test",
+  "version": "0.0.0",
+  "main": "./dist/ui/index.js",
+  "types": "./dist/ui/index.d.ts",
+  "type": "module",
+  "dependencies": {
+    "mobx": "6.8.0",
+    "mobx-react": "7.6.0",
+    "react": "18.x.x",
+    "react-dom": "18.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vega-studio/node-project.git"
+  },
+  "hosts": {
+    "127.0.0.1": "local.swapi-test.com"
+  },
+  "scripts": {
+    "build-storybook": "devops storybook --mode build",
+    "clean": "devops clean",
+    "delete": "devops delete-component",
+    "dev-page": "devops url \"https://local.${projectName:kebab}.com\"",
+    "dev": "devops dev",
+    "edit": "devops edit-component",
+    "figma": "devops url \"\"",
+    "config": "devops init",
+    "new-component": "devops new-component",
+    "pr-release": "devops pr-release \"https://github.com/bkchu/node-skeleton-test\" git main",
+    "pr": "devops url \"https://github.com/bkchu/node-skeleton-test/pulls\"",
+    "release": "devops release",
+    "storybook": "devops storybook",
+    "ts": "devops ts watch",
+    "unit-test-debug": "devops unit-test-debug",
+    "unit-test-dev": "devops unit-test-dev",
+    "unit-test": "devops unit-test",
+    "view-release": "devops release-notes"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "18.x.x",
+    "@types/react-dom": "18.x.x",
+    "devops": "github:vega-studio/node-devops#semver:1.2.3",
+    "http-proxy-middleware": "2.0.6",
+    "joi": "17.9.2",
+    "make-cert": "1.2.1",
+    "react-router-dom": "6.10.0",
+    "typescript": "4.x.x"
+  },
+  "browserslist": "> 0.25%, not dead"
+}

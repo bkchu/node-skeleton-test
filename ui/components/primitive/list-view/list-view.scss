@@ -1,0 +1,23 @@
+@import "../../../common-style.scss";
+
+.ListView {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-bottom: 0px;
+
+  &__Empty {
+    color: $colorBg;
+    font-size: 16px;
+  }
+
+  &__Row {
+    transition: all 0.2s ease;
+    display: flex;
+  }
+
+  &--empty {
+    justify-content: center;
+    align-items: center;
+  }
+}
